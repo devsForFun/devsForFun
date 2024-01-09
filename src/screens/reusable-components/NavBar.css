@@ -1,0 +1,48 @@
+#nav {
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans", sans-serif !important;
+  position: sticky;
+  top: 0;
+  background-color: #000000aa;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 99;
+  border-bottom: 1px dashed var(--grey-700);
+}
+
+#delink > img {
+  max-width: 20rem;
+}
+
+#nav-btns {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+  #nav {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #nav {
+    position: sticky;
+    top: 0;
+  }
+
+  #delink > img {
+    margin-top: 0.5rem;
+    width: 10rem;
+  }
+
+  #nav-btns > a {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+}

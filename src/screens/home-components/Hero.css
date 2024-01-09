@@ -1,0 +1,197 @@
+#hero {
+  width: 100%;
+  height: 100vh;
+}
+
+#hero-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+}
+
+main {
+  font-family: var(--manrope);
+  font-weight: 800;
+}
+
+main > p {
+  font-size: 6rem;
+  margin: 1rem;
+}
+
+#hero-btns {
+  display: flex;
+  font-size: 3rem;
+}
+
+main > div > a {
+  padding: 0.5rem 1.5rem !important;
+}
+
+main > div > a:nth-child(1) {
+  margin-right: 2rem;
+}
+
+#tags {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  font-weight: 400;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+aside > div > div {
+  width: 22rem;
+  height: 22rem;
+  margin: 1rem 0 1rem 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+aside > div > div > p {
+  color: white;
+  font-family: var(--manrope);
+  font-weight: 800;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#rajput {
+  background-image: url(/src/assets/images/red.png);
+}
+
+#maurya {
+  background-image: url(/src/assets/images/blue.png);
+}
+
+#gupta {
+  background-image: url(/src/assets/images/yellow.png);
+}
+
+#chanukya {
+  background-image: url(/src/assets/images/green.png);
+}
+
+@media screen and (max-width: 1350px) {
+  aside > div > div {
+    width: 18rem;
+    height: 18rem;
+  }
+  main > p {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  #hero {
+    height: fit-content;
+    padding-bottom: 3rem;
+  }
+
+  #hero-content {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside > div {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  aside > div > div {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  aside > div > div > p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  aside > div > div {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #rajput {
+    margin-left: 0;
+  }
+
+  aside > div > div > p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  aside > div > div {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  aside > div > div > p {
+    font-size: 0.5rem;
+  }
+  #tags {
+    padding-left: 0;
+  }
+  .tag {
+    font-size: 0.7rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  main > p {
+    font-size: 4rem;
+  }
+
+  aside > div > div {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  aside > div > div > p {
+    font-size: 0.4rem;
+  }
+
+  main > div > a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #hero-content {
+    padding: 1rem;
+  }
+
+  main > p {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+  }
+
+  aside > div > div {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  aside > div > div > p {
+    display: none;
+  }
+
+  main > div > a {
+    font-size: 1rem;
+  }
+}

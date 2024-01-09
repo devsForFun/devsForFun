@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "dayNum": 1,
+      "title": "introduction",
+      "content": [
+        "program intro",
+        "how does the internet work?",
+        "how do websites work?",
+        "motivation",
+        "things to do on day 2"
+      ]
+    },
+    {
+      "dayNum": 3,
+      "title": "writing code",
+      "content": [
+        "setting things up",
+        "codepen.io",
+        "design a webpage using html & css",
+        "take-home challenges (day 4)"
+      ]
+    },
+    {
+      "dayNum": 5,
+      "title": "programming with javascript",
+      "content": [
+        "algorithms (and how to write one)",
+        "the javascript language",
+        "treanslating algorithms into code",
+        "take-home challenges (day 6)"
+      ]
+    },
+    {
+      "dayNum": 7,
+      "title": "more javascript",
+      "content": ["functions", "methods", "arrays", "objects", "take-home challenges (day 8)"]
+    },
+    {
+      "dayNum": 9,
+      "title": "set up like a real dev",
+      "content": ["visual studio code", "git, github", "real dev challenge (day 10)"]
+    },
+    {
+      "dayNum": 11,
+      "title": "javascript for the web",
+      "content": [
+        "how to make buttons work on the web",
+        "counter app",
+        "clock app",
+        "take-home challenges (day 12)"
+      ]
+    },
+    {
+      "dayNum": 13,
+      "title": "play with images",
+      "content": [
+        "2d arrays & images",
+        "setup to play with images",
+        "add a color filter to any image",
+        "take-home challenges (day 14)"
+      ]
+    },
+    {
+      "dayNum": 15,
+      "title": "final project",
+      "content": [
+        "project briefing",
+        "live doubts clarification",
+        "motivation",
+        "work on your project (days 16 to 20)"
+      ]
+    },
+    {
+      "dayNum": 21,
+      "title": "what's next?",
+      "content": ["where to go from here?", "what happens after this?", "fun chat", "byes"]
+    }
+  ]
+}
