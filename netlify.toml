@@ -3,6 +3,6 @@ command = "npm run build"
 publish = "dist"
 
 [[headers]]
-for = "/*.js"
+for = "/*.jsx"
 [headers.values]
 Content-Type = "text/javascript"
