@@ -7,7 +7,7 @@ import { Curriculum } from "./screens/Curriculum";
 import { NothingToSeeHere } from "./screens/NothingToSeeHere";
 import { Route, Routes } from "react-router-dom";
 
-export const S1 = () => {
+export const SeasonOne = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
