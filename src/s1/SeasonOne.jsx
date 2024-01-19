@@ -7,7 +7,7 @@ import { Curriculum } from "./screens/Curriculum";
 import { NothingToSeeHere } from "./screens/NothingToSeeHere";
 import { Route, Routes } from "react-router-dom";
 
-export const ScrollToTop = () => {
+export const SeasonOne = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -16,11 +16,12 @@ export const ScrollToTop = () => {
 
   return (
     <Routes>
-      <Route path="/" Component={Home} />
-      <Route path="/about" Component={About} />
-      <Route path="/registration" Component={Registration} />
-      <Route path="/curriculum" Component={Curriculum} />
-      <Route path="/nothing-to-see-here" Component={NothingToSeeHere} />
+      <Route path="/" Component={Home} /> {/*Replace this with s2 home after creating s2*/}
+      <Route path="/s1" Component={Home} />
+      <Route path="/s1/about" Component={About} />
+      <Route path="/s1/registration" Component={Registration} />
+      <Route path="/s1/curriculum" Component={Curriculum} />
+      <Route path="/s1/nothing-to-see-here" Component={NothingToSeeHere} />
     </Routes>
   );
 };
