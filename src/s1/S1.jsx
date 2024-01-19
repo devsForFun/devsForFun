@@ -7,7 +7,7 @@ import { Curriculum } from "./screens/Curriculum";
 import { NothingToSeeHere } from "./screens/NothingToSeeHere";
 import { Route, Routes } from "react-router-dom";
 
-export const ScrollToTop = () => {
+export const S1 = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {

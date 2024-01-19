@@ -1,11 +1,11 @@
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
-import { ScrollToTop } from "./s1/ScrollToTop";
+import { S1 } from "./s1/S1";
 
 export const App = () => {
   return (
     <BrowserRouter>
-      <ScrollToTop />
+      <S1 />
     </BrowserRouter>
   );
 };
