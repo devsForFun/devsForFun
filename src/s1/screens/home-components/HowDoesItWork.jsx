@@ -26,7 +26,7 @@ export const HowDoesItWork = () => {
           week 2: use what you've learned <br />
           week 3: do it yourself <br />
         </p>
-        <Link to="/curriculum" className="gdsc-btn">
+        <Link to="/s1/curriculum" className="gdsc-btn">
           open full plan
         </Link>
       </div>
