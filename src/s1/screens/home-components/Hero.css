@@ -67,19 +67,19 @@ aside > div > div > p {
 }
 
 #rajput {
-  background-image: url(/src/assets/images/red.png);
+  background-image: url(/src/s1/assets/images/red.png);
 }
 
 #maurya {
-  background-image: url(/src/assets/images/blue.png);
+  background-image: url(/src/s1/assets/images/blue.png);
 }
 
 #gupta {
-  background-image: url(/src/assets/images/yellow.png);
+  background-image: url(/src/s1/assets/images/yellow.png);
 }
 
 #chanukya {
-  background-image: url(/src/assets/images/green.png);
+  background-image: url(/src/s1/assets/images/green.png);
 }
 
 @media screen and (max-width: 1350px) {
