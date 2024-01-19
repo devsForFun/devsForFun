@@ -7,7 +7,7 @@ import { Curriculum } from "./screens/Curriculum";
 import { NothingToSeeHere } from "./screens/NothingToSeeHere";
 import { Route, Routes } from "react-router-dom";
 
-const S1 = () => {
+export const S1 = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -25,5 +25,3 @@ const S1 = () => {
     </Routes>
   );
 };
-
-export default S1;
