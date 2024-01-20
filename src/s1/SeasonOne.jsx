@@ -6,6 +6,7 @@ import { Registration } from "./screens/Registration";
 import { Curriculum } from "./screens/Curriculum";
 import { NothingToSeeHere } from "./screens/NothingToSeeHere";
 import { Route, Routes } from "react-router-dom";
+import "./SeasonOne.css";
 
 export const SeasonOne = () => {
   const { pathname } = useLocation();
