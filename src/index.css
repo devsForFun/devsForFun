@@ -36,6 +36,14 @@ body {
   color: var(--white);
 }
 
+main > p {
+  color: var(--white);
+}
+
+p {
+  color: rgb(160, 160, 160);
+}
+
 .gdsc-btn {
   display: flex;
   justify-content: center;
