@@ -17,6 +17,7 @@
   --whitesmoke: whitesmoke;
   --grey-700: #5f6368;
   --grey-100: #f1f3f4;
+  --grey-200: #a0a0a0;
   --btn-pressed-color: rgb(48, 48, 48);
 
   /* Shorthands for Fonts */
@@ -36,12 +37,8 @@ body {
   color: var(--white);
 }
 
-main > p {
-  color: var(--white);
-}
-
 p {
-  color: rgb(160, 160, 160);
+  color: var(--grey-200);
 }
 
 .gdsc-btn {
@@ -50,7 +47,6 @@ p {
   align-items: center;
   flex-wrap: nowrap;
   text-decoration: none;
-  color: var(--white);
   border: 1px solid var(--white);
   padding: 0.5rem 1rem;
   border-radius: 3rem;
