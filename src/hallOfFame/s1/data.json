@@ -1,24 +1,25 @@
 {
   "data": [
     {
-      "name": "",
-      "country": "",
+      "name": "Jeffin Issac",
+      "username": "Jeffin-Issac",
+      "country": "India",
       "linkedin": "",
-      "github": "",
-      "club": "",
-      "pd2repo": "",
-      "pd2site": "",
-      "pd1repo": "",
-      "pd1site": "",
-      "rdcrepo": "",
-      "rdcsite": "",
-      "d14repo": "",
-      "d14site": "",
-      "d12repo2": "",
-      "d12site2": "",
-      "d12repo1": "",
-      "d12site1": ""
-    },
-    {}
+      "github": "https://github.com/Jeffin03",
+      "club": "gdsc-kjc",
+      "vibe": "blue",
+      "pd2repo": "https://github.com/Jeffin03/devsForFun/tree/main/Green_Screen",
+      "pd2site": "https://jeffin03.github.io/devsForFun/Green_Screen/",
+      "pd1repo": "https://github.com/Jeffin03/devsForFun/tree/main/ToDo-app",
+      "pd1site": "https://jeffin03.github.io/devsForFun/ToDo-app/",
+      "rdcrepo": "https://github.com/Jeffin03/devsForFun/tree/main/NotesPage-clone/",
+      "rdcsite": "https://jeffin03.github.io/devsForFun/NotesPage-clone/",
+      "d14repo": "https://github.com/Jeffin03/devsForFun/tree/main/image-filter-app",
+      "d14site": "https://jeffin03.github.io/devsForFun/image-filter-app/",
+      "d12repo2": "https://github.com/Jeffin03/devsForFun/tree/main/counter-app",
+      "d12site2": "https://jeffin03.github.io/devsForFun/counter-app/",
+      "d12repo1": "https://github.com/Jeffin03/devsForFun/tree/main/custom-new-tab",
+      "d12site1": "https://jeffin03.github.io/devsForFun/custom-new-tab/"
+    }
   ]
 }
