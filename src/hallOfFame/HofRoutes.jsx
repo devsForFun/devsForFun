@@ -14,7 +14,7 @@ export const HofRoutes = () => {
           <Route
             key={index}
             path={`hall-of-fame/s1/${person.username}`}
-            Component={<ProfilePage person={person} />}
+            element={<ProfilePage person={person} />}
           />
         );
       })}

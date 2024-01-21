@@ -5,7 +5,7 @@ import { HofRoutes } from "./hallOfFame/HofRoutes";
 export const App = () => {
   return (
     <BrowserRouter>
-      <SeasonOne />
+      {/* <SeasonOne /> */}
       <HofRoutes />
     </BrowserRouter>
   );

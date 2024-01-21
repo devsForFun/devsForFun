@@ -7,9 +7,7 @@ export const SmallProfileCard = ({ person }) => {
       <h1>SmallProfileCard</h1>
       <b>Name: </b>
       <span>{person.name}</span>
-      <BrowserRouter>
-        <Link to={url}>View their work</Link>
-      </BrowserRouter>
+      <Link to={url}>View their work</Link>
     </div>
   );
 };
