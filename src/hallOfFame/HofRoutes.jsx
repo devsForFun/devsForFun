@@ -10,7 +10,6 @@ export const HofRoutes = () => {
       <Route path="/hall-of-fame" Component={HallOfFame} />
       <Route path="/hall-of-fame/s1" Component={HofSeasonOne} />
       {datas1.map((person, index) => {
-        console.log("working");
         return (
           <Route
             key={index}
