@@ -1,24 +1,16 @@
 {
-  "data": [
+  "datas1": [
     {
-      "name": "",
-      "country": "",
-      "linkedin": "",
-      "github": "",
-      "club": "",
-      "pd2repo": "",
-      "pd2site": "",
-      "pd1repo": "",
-      "pd1site": "",
-      "rdcrepo": "",
-      "rdcsite": "",
-      "d14repo": "",
-      "d14site": "",
-      "d12repo2": "",
-      "d12site2": "",
-      "d12repo1": "",
-      "d12site1": ""
+      "name": "charan",
+      "username": "charan"
     },
-    {}
+    {
+      "name": "jitendra",
+      "username": "jitendra"
+    },
+    {
+      "name": "Tony Stark",
+      "username": "tony-stark"
+    }
   ]
 }
