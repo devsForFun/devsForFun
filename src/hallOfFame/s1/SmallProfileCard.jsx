@@ -27,7 +27,7 @@ export const SmallProfileCard = ({ person }) => {
       <img src={img} alt="" style={{ backgroundColor: secColor }} />
       <p>{person.name}</p>
       <Link to={url}>
-        <span>View their work</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>view their work</span>&nbsp;&nbsp;&nbsp;&nbsp;
         <i class="fa-solid fa-chevron-right"></i>
       </Link>
     </div>

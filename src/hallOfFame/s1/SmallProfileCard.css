@@ -25,6 +25,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-transform: lowercase;
 }
 
 .s1-spcard > a {
