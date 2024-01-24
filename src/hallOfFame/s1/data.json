@@ -2,6 +2,7 @@
   "datas1": [
     {
       "name": "Jeffin Issac",
+      "gender": "male",
       "username": "Jeffin-Issac",
       "country": "India",
       "linkedin": "",
@@ -23,6 +24,7 @@
     },
     {
       "name": "Nikhil Kumar",
+      "gender": "male",
       "username": "Nikhil-Kumar",
       "country": "India",
       "linkedin": "https://www.linkedin.com/in/nikhil-kumar-408758202/",
@@ -44,6 +46,7 @@
     },
     {
       "name": "Lakshmana Srinandan Yadav Korrayi",
+      "gender": "male",
       "username": "Lakshmana-Srinandan-Yadav-Korrayi",
       "country": "India",
       "linkedin": "https://www.linkedin.com/in/nandan-yadav-710897263/",
@@ -65,6 +68,7 @@
     },
     {
       "name": "Muamar Zidan Tri Antoro",
+      "gender": "male",
       "username": "Muamar-Zidan-Tri-Antoro",
       "country": "Indonesia",
       "linkedin": "https://www.linkedin.com/in/muamar-zidan/",
@@ -86,6 +90,7 @@
     },
     {
       "name": "Khushbu Chetan Modi",
+      "gender": "female",
       "username": "Khushbu-Chetan-Modi",
       "country": "India",
       "linkedin": "",
@@ -107,12 +112,13 @@
     },
     {
       "name": "Kanagala Balasubrahmanyam",
+      "gender": "male",
       "username": "Kanagala-Balasubrahmanyam",
       "country": "India",
       "linkedin": "https://www.linkedin.com/in/subrahmanyam004/",
       "github": "https://github.com/balukanagala",
       "club": "gdsc-rec",
-      "vibe": "",
+      "vibe": "red",
       "pd2repo": "https://github.com/balukanagala/GreenScreenEditor",
       "pd2site": "https://balukanagala.github.io/GreenScreenEditor/",
       "pd1repo": "https://github.com/balukanagala/To-Do-App",
