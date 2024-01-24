@@ -1,0 +1,44 @@
+.s1-spcard {
+  max-width: 320px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem 1rem 1rem;
+  margin: 1rem;
+}
+
+.s1-spcard > img {
+  width: 160px;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.s1-spcard > p {
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 1rem auto 0.5rem auto;
+  color: white;
+  width: 300px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: lowercase;
+}
+
+.s1-spcard > a {
+  color: white;
+  border-radius: 3rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  /* backdrop-filter: blur(10px); */
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.s1-spcard > a:hover {
+  background-color: #00000022;
+}

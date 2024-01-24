@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -15,20 +16,26 @@ export const Hero = () => {
             <span id="tag1" className="tag">
               $ free
             </span>
-            <span id="tag2" className="tag">
+            <span id="tag4" className="tag">
               need a computer/laptop
             </span>
-            <span id="tag4" className="tag">
-              11 nov
+            {/* <span id="tag4" className="tag">
+              nov 11
+            </span> */}
+            <span id="tag3" className="tag">
+              s1 is over
             </span>
           </div>
           <div id="hero-btns">
-            <a href="https://forms.gle/pN5fQZgLKeqfQbcTA" className="gdsc-btn">
+            {/* <a href="https://forms.gle/pN5fQZgLKeqfQbcTA" className="gdsc-btn">
               i'm in
             </a>
             <a href="#hdiw" className="gdsc-btn">
               tell me more
-            </a>
+            </a> */}
+            <Link to="/hall-of-fame/s1" className="gdsc-btn">
+              visit s1 hall of fame
+            </Link>
           </div>
         </main>
         <aside>
