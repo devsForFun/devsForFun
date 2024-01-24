@@ -3,7 +3,7 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <footer>
-      <p style={{ color: "white" }}>devsForFun(❤️)</p>
+      <p style={{ color: "white" }}>devsForFun(❤️) s1</p>
       <p>
         <a href="https://twitter.com/devsForFun">
           <i className="fa-brands fa-square-x-twitter space-to-right"></i>
