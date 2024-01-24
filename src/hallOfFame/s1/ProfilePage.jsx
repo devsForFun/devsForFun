@@ -68,10 +68,10 @@ export const ProfilePage = ({ person }) => {
           </span>
           <span id="p-socials">
             <a href={person.github}>
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-github"></i>
             </a>
             <a href={person.linkedin}>
-              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </span>
         </div>
