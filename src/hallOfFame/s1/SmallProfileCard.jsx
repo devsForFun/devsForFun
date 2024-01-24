@@ -22,6 +22,7 @@ export const SmallProfileCard = ({ person }) => {
       img = blueImg;
     }
   }
+
   return (
     <div className="s1-spcard" style={{ backgroundColor: color }}>
       <img src={img} alt="" style={{ backgroundColor: secColor }} />
