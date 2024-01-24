@@ -1,0 +1,92 @@
+#s1-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+#s1-profile > img {
+  width: 200px;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+#s1-profile > span {
+  color: rgb(160, 160, 160);
+}
+
+#p-name {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+
+#s1-profile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+#s1-profile > div > span {
+  margin: 0.25rem 0;
+}
+
+#s1-profile > div > span > a {
+  color: white;
+  text-decoration: none;
+}
+
+#s1-profile > div > span > a:hover {
+  text-decoration: underline;
+}
+
+#p-socials {
+  display: flex;
+  justify-content: baseline;
+  gap: 1rem;
+  align-items: center;
+}
+
+#p-socials > a > i {
+  font-size: 1.5rem;
+}
+
+#s1-projects {
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+#s1-projects > p > span {
+  color: white;
+  text-transform: lowercase;
+}
+
+#s1-projects > div {
+  max-width: max-content;
+  margin: auto;
+  text-align: right;
+}
+
+#s1-projects > div > p > a:hover {
+  color: white !important;
+}
+
+@media (max-width: 578px) {
+  #s1-profile {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #p-socials {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 545px) {
+  #s1-projects > div {
+    text-align: left;
+  }
+}
