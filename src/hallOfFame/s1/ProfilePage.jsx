@@ -12,7 +12,7 @@ export const ProfilePage = ({ person }) => {
   let color = person.vibe;
   let img, vibe;
   const projects = [
-    ["green scrren image editor", "pd2"],
+    ["green screen image editor", "pd2"],
     ["to-do app with local storage task retrieval", "pd1"],
     ["html day 4 notion notes page replica", "rdc"],
     ["grey filter for images", "d14"],
