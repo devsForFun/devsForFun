@@ -11,6 +11,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { ModeToggle } from "@/components/mode-toggle";
+import Image from "next/image";
 // import Link from "next/link";
 
 const images = ["/red.png", "/blue.png", "/yellow.png", "/green.png"];
@@ -59,8 +60,10 @@ const WaitlistForm = () => {
       <div className="rounded-xl border bg-card text-card-foreground shadow mx-auto w-[322px] sm:w-[386px]">
         <div className="flex">
           {images.map((src, index) => (
-            <img
+            <Image
               src={src}
+              width={500}
+              height={500}
               alt=""
               className={`w-20 sm:w-24 ${index == 0 ? "rounded-tl-xl" : ""} ${
                 index == 3 ? "rounded-tr-xl" : ""
