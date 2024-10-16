@@ -1,0 +1,38 @@
+.club {
+  margin: 1rem auto 0 auto;
+  border-top: 1px dashed var(--grey-700);
+}
+
+.club-name {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 450px;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.club-name > img {
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.club-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 440px;
+  margin: 0 auto 1rem auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .club-name {
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  .club-links {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

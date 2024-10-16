@@ -1,0 +1,77 @@
+#motiv {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  border-top: 1px dashed var(--grey-700);
+  border-bottom: 1px dashed var(--grey-700);
+}
+
+#img-div-m {
+  height: 100vh;
+  width: 30%;
+  background-image: url(/src/s1/assets/images/youcandothis.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-left: 1px dashed var(--grey-700);
+}
+
+#content-div-m {
+  margin: 0 auto;
+  width: 50%;
+  padding: 2rem;
+}
+
+#content-div-m > h2 {
+  margin: 0;
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+#content-div-m > p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#content-div-m > a {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 737px) {
+  #motiv {
+    position: relative;
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  #img-div-m {
+    width: 100%;
+    height: 30vh;
+    border-bottom: 1px dashed var(--grey-700);
+    border-left: none;
+  }
+
+  #content-div-m {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0;
+  }
+
+  #content-div-m > h2 {
+    font-size: 2.5rem;
+  }
+
+  #content-div-m > p {
+    font-size: 1.5rem;
+  }
+
+  #content-div-m > a {
+    font-size: 1rem;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+  }
+}

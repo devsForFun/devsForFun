@@ -1,0 +1,26 @@
+#ntsh {
+  transform: translateY(50%);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+#ntsh-img {
+  max-width: 400px;
+  width: 80%;
+}
+
+#ntsh-caption {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.gdsc-btn img {
+  height: 1rem;
+  width: 3rem;
+}

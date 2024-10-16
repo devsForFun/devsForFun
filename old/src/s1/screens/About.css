@@ -1,0 +1,45 @@
+#about {
+  max-width: 600px;
+  margin: 2rem auto;
+  border: 1px dashed var(--grey-700);
+  text-align: center;
+}
+
+#about > p,
+#about > h2 {
+  padding: 0 1rem;
+}
+
+#about h2 {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+#about > a {
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+#about > div {
+  text-align: center;
+}
+
+.fa-brands {
+  color: #5f6368;
+  font-size: 2rem;
+}
+
+.fa-brands:hover {
+  color: white;
+}
+
+.space-to-right {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    border-left: none;
+    border-right: none;
+  }
+}
