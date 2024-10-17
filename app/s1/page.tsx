@@ -182,7 +182,7 @@ const Page: React.FC = () => {
       {/* cant-follow-live */}
       <div className="p-8 text-center max-w-[520px] border border-dashed mx-auto my-10 md:text-2xl md:max-w-[768px]">
         <h2 className="text-3xl font-extrabold mx-auto mb-6 md:text-5xl">
-          can&apso;t follow live? <br /> no problem!
+          can&apos;t follow live? <br /> no problem!
         </h2>
         <p className="text-muted-foreground">
           you can register until 3 days from the start date and still submit
