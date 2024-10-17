@@ -119,6 +119,7 @@ const Page: React.FC = () => {
               variant="outline"
               className="rounded-full text-lg font-bold"
               asChild
+              disabled
             >
               <Link href="/s1/curriculum">open full plan</Link>
             </Button>
