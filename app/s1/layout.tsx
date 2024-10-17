@@ -21,16 +21,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={manrope.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <header className="w-full sticky top-0 flex justify-between items-center px-4 py-4 border-b border-dashed bg-background/50 backdrop-blur">
+          <header className="w-full sticky top-0 flex justify-between items-center px-4 py-4 border-b border-dashed bg-background/50 backdrop-blur z-[99]">
             <h1 className="font-semibold text-3xl">devsForFun</h1>
-            <Button variant="outline" className="rounded-full">
+            <Button variant="outline" disabled className="rounded-full">
               <Link href="/s1/about">about</Link>
             </Button>
           </header>
 
           {children}
 
-          <footer className="text-center">
+          <footer className="text-center text-xs pt-6 pb-4">
             <Button variant="link" asChild>
               <Link href="/">devsForFun</Link>
             </Button>
