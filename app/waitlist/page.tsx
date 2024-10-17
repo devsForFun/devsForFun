@@ -11,7 +11,10 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { ModeToggle } from "@/components/mode-toggle";
+import Image from "next/image";
 // import Link from "next/link";
+
+const images = ["/red.png", "/blue.png", "/yellow.png", "/green.png"];
 
 const WaitlistForm = () => {
   const [formData, setFormData] = useState({
@@ -54,11 +57,25 @@ const WaitlistForm = () => {
 
   return (
     <div className="h-screen w-full flex items-center justify-center">
-      <Card className="w-[350px]">
+      <Card className="w-[322px] sm:w-[386px]">
+        <div className="flex">
+          {images.map((src, index) => (
+            <Image
+              src={src}
+              width={500}
+              height={500}
+              alt=""
+              className={`w-20 sm:w-24 ${index == 0 ? "rounded-tl-xl" : ""} ${
+                index == 3 ? "rounded-tr-xl" : ""
+              }`}
+              key={src + index}
+            />
+          ))}
+        </div>
         <CardHeader>
           <CardTitle className="text-2xl">devsForFun</CardTitle>
           <CardDescription>
-            <span>Join the waitlist to get a reminder when we launch! 🚀</span>
+            <span>Join the waitlist to get a reminder when we launch!</span>
             <br />
             {/* <span>
               We did sth last time:{" "}
@@ -108,7 +125,7 @@ const WaitlistForm = () => {
             )}
           </form>
         </CardContent>
-        <CardFooter>
+        <CardFooter className="flex sm:gap-10">
           <CardDescription>
             We won&apos;t spam you after one email unless you sign-up after the
             launch. <br />
