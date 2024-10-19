@@ -10,7 +10,6 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -129,15 +128,16 @@ const WaitlistForm = () => {
           <CardDescription>
             We won&apos;t spam you after one email unless you sign-up after the
             launch. <br />
-            For queries:{" "}
-            <a
-              className="dark:text-white text-black"
-              href="mailto:hello@devsforfun.com"
-            >
-              hello@devsforfun.com
-            </a>
+            <span className="mt-2 block">
+              For queries:{" "}
+              <a
+                className="dark:text-white text-black"
+                href="mailto:hello@devsforfun.com"
+              >
+                hello@devsforfun.com
+              </a>
+            </span>
           </CardDescription>
-          <ModeToggle />
         </CardFooter>
       </Card>
     </div>

@@ -17,9 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={manrope.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
+    <html lang="en" className="dark">
+      <body className={`${manrope.className} dark`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
         </ThemeProvider>
       </body>
