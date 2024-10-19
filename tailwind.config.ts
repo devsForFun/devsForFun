@@ -59,6 +59,9 @@ const config: Config = {
       backdropBrightness: {
         25: ".25",
       },
+      screens: {
+        xs: "375px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
