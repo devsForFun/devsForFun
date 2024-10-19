@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 
 const images = ["/red.png", "/blue.png", "/yellow.png", "/green.png"];
 
@@ -77,12 +77,12 @@ const WaitlistForm = () => {
           <CardDescription>
             <span>Join the waitlist to get a reminder when we launch!</span>
             <br />
-            {/* <span>
+            <span>
               We did sth last time:{" "}
               <Button variant="link" className="p-0" asChild>
                 <Link href="/s1">s1</Link>
               </Button>
-            </span> */}
+            </span>
           </CardDescription>
         </CardHeader>
         <CardContent>
