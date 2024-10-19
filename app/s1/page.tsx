@@ -18,11 +18,12 @@ const Page: React.FC = () => {
           <Link href="/s1/about">about</Link>
         </Button>
       </header>
+
       {/* hero section */}
-      <div className="flex flex-wrap-reverse justify-center p-8 lg:justify-evenly items-center h-[90vh]">
+      <div className="flex flex-wrap-reverse justify-center p-8 lg:justify-evenly items-center sm:h-[90vh]">
         <div className="mt-8 w-min">
           {/* heading */}
-          <h2 className="text-6xl font-extrabold xl:text-7xl">
+          <h2 className="text-4xl xs:text-6xl font-extrabold xl:text-7xl">
             try to learn how to code for 3 weeks. <br /> you in?
           </h2>
           {/* badges */}
@@ -41,21 +42,19 @@ const Page: React.FC = () => {
             </Badge>
           </div>
           {/* cta buttons */}
-          <div className="my-6 flex gap-8">
+          <div className="my-6 flex gap-4 xs:gap-8">
             <Button
-              className="text-2xl font-extrabold rounded-full sm:text-3xl sm:px-6 sm:py-6"
+              className="text-lg xs:test-2xl font-extrabold rounded-full sm:text-3xl sm:px-6 sm:py-6"
               disabled
             >
               i&apos;m in
             </Button>
             <Button
-              className="text-2xl font-extrabold rounded-full sm:text-3xl sm:px-6 sm:py-6"
+              className="text-lg xs:text-2xl font-extrabold rounded-full sm:text-3xl sm:px-6 sm:py-6"
               variant="outline"
               asChild
             >
-              <Link href="/s1/hall-of-fame">
-                <Castle className="mr-4" /> s1 hall of fame
-              </Link>
+              <Link href="/s1/hall-of-fame">s1 hall of fame</Link>
             </Button>
           </div>
         </div>
@@ -66,7 +65,7 @@ const Page: React.FC = () => {
               width={500}
               height={500}
               alt=""
-              className={`w-20 sm:w-36 lg:w-52 xl:w-72`}
+              className={`w-16 xs:w-20 sm:w-36 lg:w-52 xl:w-72`}
               key={src + index}
             />
           ))}
