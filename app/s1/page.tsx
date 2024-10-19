@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Castle } from "lucide-react";
 import DottedSeparator from "@/components/dotted-separator";
 import { Badge } from "@/components/ui/badge";
 
