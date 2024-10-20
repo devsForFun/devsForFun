@@ -50,6 +50,14 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        scarletnova: "var(--scarletnova)",
+        moonwind: "var(--moonwind)",
+        goldlight: "var(--goldlight)",
+        emraldspark: "var(--emraldspark)",
+        "scarletnova-faded": "var(--scarletnova-faded)",
+        "moonwind-faded": "var(--moonwind-faded)",
+        "goldlight-faded": "var(--goldlight-faded)",
+        "emraldspark-faded": "var(--emraldspark-faded)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,5 +73,15 @@ const config: Config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  safelist: [
+    "hover:border-emraldspark-faded",
+    "hover:border-goldlight-faded",
+    "hover:border-scarletnova-faded",
+    "hover:border-moonwind-faded",
+    "hover:bg-emraldspark",
+    "hover:bg-goldlight",
+    "hover:bg-scarletnova",
+    "hover:bg-moonwind",
+  ],
 };
 export default config;
