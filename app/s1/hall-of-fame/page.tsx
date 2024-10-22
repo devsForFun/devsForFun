@@ -34,7 +34,8 @@ const Page: React.FC = () => {
   useEffect(() => {
     const fetchFinishers = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/get-finishers");
+        const base_url = process.env.BASE_URL as string;
+        const response = await fetch(base_url + "/api/get-finishers");
         const data = await response.json();
         console.log("data:", data);
         setFinishers(data);
