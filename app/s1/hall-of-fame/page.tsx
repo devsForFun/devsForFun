@@ -4,8 +4,32 @@ import S1BaseLayout from "../s1-base-layout";
 import DottedSeparator from "@/components/dotted-separator";
 import S1FinisherCard from "@/components/s1-finisher-card";
 
+export type Finisher = {
+  id: number;
+  name: string;
+  gender: string;
+  username: string;
+  country: string;
+  linkedin: string;
+  github: string;
+  club: string;
+  vibe: string;
+  pd2repo: string;
+  pd2site: string;
+  pd1repo: string;
+  pd1site: string;
+  rdcrepo: string;
+  rdcsite: string;
+  d14repo: string;
+  d14site: string;
+  d12repo2: string;
+  d12repo1: string;
+  d12site2: string;
+  d12site1: string;
+};
+
 const Page: React.FC = () => {
-  const [finishers, setFinishers] = useState([]);
+  const [finishers, setFinishers] = useState<Finisher[] | []>([]);
 
   useEffect(() => {
     const fetchFinishers = async () => {
