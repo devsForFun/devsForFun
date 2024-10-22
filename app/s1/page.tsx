@@ -7,7 +7,12 @@ import DottedSeparator from "@/components/dotted-separator";
 import { Badge } from "@/components/ui/badge";
 import S1BaseLayout from "./s1-base-layout";
 
-const images = ["/red.png", "/blue.png", "/yellow.png", "/green.png"];
+const images = [
+  "/scarletnova.png",
+  "/moonwind.png",
+  "/goldlight.png",
+  "/emraldspark.png",
+];
 
 const Page: React.FC = () => {
   return (
@@ -71,7 +76,7 @@ const Page: React.FC = () => {
         {/* image used to goes here */}
         <Image
           alt=""
-          src="/howdoesitwork.png"
+          src="/howdoesitwork2.png"
           width={700}
           height={1200}
           className="basis-full w-full h-52 object-cover object-bottom sm:border-r sm:border-dashed sm:basis-0 sm:w-64 sm:h-96 md:w-[500px] md:h-[600px] lg:h-screen"
@@ -157,7 +162,7 @@ const Page: React.FC = () => {
         {/* image used to go here */}
         <Image
           alt=""
-          src="/youcandothis.png"
+          src="/youcandothis2.png"
           width={700}
           height={1200}
           className="basis-full w-full h-52 object-cover object-bottom sm:border-l sm:border-dashed sm:basis-0 sm:w-64 sm:h-96 md:w-[500px] md:h-[600px] lg:h-screen"
