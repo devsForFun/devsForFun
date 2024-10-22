@@ -13,7 +13,12 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-const images = ["/red.png", "/blue.png", "/yellow.png", "/green.png"];
+const images = [
+  "/scarletnova.png",
+  "/moonwind.png",
+  "/goldlight.png",
+  "/emraldspark.png",
+];
 
 const WaitlistForm = () => {
   const [formData, setFormData] = useState({
