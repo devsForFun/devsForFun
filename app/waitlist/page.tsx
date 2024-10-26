@@ -10,11 +10,15 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 
-const images = ["/red.png", "/blue.png", "/yellow.png", "/green.png"];
+const images = [
+  "/scarletnova.png",
+  "/moonwind.png",
+  "/goldlight.png",
+  "/emraldspark.png",
+];
 
 const WaitlistForm = () => {
   const [formData, setFormData] = useState({
@@ -77,12 +81,12 @@ const WaitlistForm = () => {
           <CardDescription>
             <span>Join the waitlist to get a reminder when we launch!</span>
             <br />
-            {/* <span>
+            <span>
               We did sth last time:{" "}
               <Button variant="link" className="p-0" asChild>
                 <Link href="/s1">s1</Link>
               </Button>
-            </span> */}
+            </span>
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -129,15 +133,16 @@ const WaitlistForm = () => {
           <CardDescription>
             We won&apos;t spam you after one email unless you sign-up after the
             launch. <br />
-            For queries:{" "}
-            <a
-              className="dark:text-white text-black"
-              href="mailto:hello@devsforfun.com"
-            >
-              hello@devsforfun.com
-            </a>
+            <span className="mt-2 block">
+              For queries:{" "}
+              <a
+                className="dark:text-white text-black"
+                href="mailto:hello@devsforfun.com"
+              >
+                hello@devsforfun.com
+              </a>
+            </span>
           </CardDescription>
-          <ModeToggle />
         </CardFooter>
       </Card>
     </div>

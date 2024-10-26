@@ -1,21 +1,27 @@
-import React from "react";
+"use client";
+
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Castle } from "lucide-react";
 import DottedSeparator from "@/components/dotted-separator";
 import { Badge } from "@/components/ui/badge";
+import S1BaseLayout from "./s1-base-layout";
 
-const images = ["/red.png", "/blue.png", "/yellow.png", "/green.png"];
+const images = [
+  "/scarletnova.png",
+  "/moonwind.png",
+  "/goldlight.png",
+  "/emraldspark.png",
+];
 
 const Page: React.FC = () => {
   return (
-    <>
+    <S1BaseLayout>
       {/* hero section */}
-      <div className="flex flex-wrap-reverse justify-center p-8 lg:justify-evenly items-center h-[90vh]">
+      <div className="flex flex-wrap-reverse justify-center p-8 lg:justify-evenly items-center sm:h-[90vh]">
         <div className="mt-8 w-min">
           {/* heading */}
-          <h2 className="text-6xl font-extrabold xl:text-7xl">
+          <h2 className="text-4xl xs:text-6xl font-extrabold xl:text-7xl">
             try to learn how to code for 3 weeks. <br /> you in?
           </h2>
           {/* badges */}
@@ -34,21 +40,19 @@ const Page: React.FC = () => {
             </Badge>
           </div>
           {/* cta buttons */}
-          <div className="my-6 flex gap-8">
+          <div className="my-6 flex gap-4 xs:gap-8">
             <Button
-              className="text-2xl font-extrabold rounded-full sm:text-3xl sm:px-6 sm:py-6"
+              className="text-lg xs:test-2xl font-extrabold rounded-full sm:text-3xl sm:px-6 sm:py-6"
               disabled
             >
               i&apos;m in
             </Button>
             <Button
-              className="text-2xl font-extrabold rounded-full sm:text-3xl sm:px-6 sm:py-6"
+              className="text-lg xs:text-2xl font-extrabold rounded-full sm:text-3xl sm:px-6 sm:py-6"
               variant="outline"
               asChild
             >
-              <Link href="/s1/hall-of-fame">
-                <Castle className="mr-4" /> s1 hall of fame
-              </Link>
+              <Link href="/s1/hall-of-fame">s1 hall of fame</Link>
             </Button>
           </div>
         </div>
@@ -59,7 +63,7 @@ const Page: React.FC = () => {
               width={500}
               height={500}
               alt=""
-              className={`w-20 sm:w-36 lg:w-52 xl:w-72`}
+              className={`w-16 xs:w-20 sm:w-36 lg:w-52 xl:w-72`}
               key={src + index}
             />
           ))}
@@ -72,7 +76,7 @@ const Page: React.FC = () => {
         {/* image used to goes here */}
         <Image
           alt=""
-          src="/howdoesitwork.png"
+          src="/howdoesitwork2.png"
           width={700}
           height={1200}
           className="basis-full w-full h-52 object-cover object-bottom sm:border-r sm:border-dashed sm:basis-0 sm:w-64 sm:h-96 md:w-[500px] md:h-[600px] lg:h-screen"
@@ -158,7 +162,7 @@ const Page: React.FC = () => {
         {/* image used to go here */}
         <Image
           alt=""
-          src="/youcandothis.png"
+          src="/youcandothis2.png"
           width={700}
           height={1200}
           className="basis-full w-full h-52 object-cover object-bottom sm:border-l sm:border-dashed sm:basis-0 sm:w-64 sm:h-96 md:w-[500px] md:h-[600px] lg:h-screen"
@@ -182,7 +186,7 @@ const Page: React.FC = () => {
       {/* cant-follow-live */}
       <div className="p-8 text-center max-w-[520px] border border-dashed mx-auto my-10 md:text-2xl md:max-w-[768px]">
         <h2 className="text-3xl font-extrabold mx-auto mb-6 md:text-5xl">
-          can&apso;t follow live? <br /> no problem!
+          can&apos;t follow live? <br /> no problem!
         </h2>
         <p className="text-muted-foreground">
           you can register until 3 days from the start date and still submit
@@ -205,7 +209,7 @@ const Page: React.FC = () => {
       </div>
 
       <DottedSeparator />
-    </>
+    </S1BaseLayout>
   );
 };
 

@@ -1,7 +1,12 @@
-import React from'react';
+import React from "react";
+import S1BaseLayout from "../s1-base-layout";
 
 const Page: React.FC = () => {
-  return <div>Welcome to s1/curriculum!</div>;
+  return (
+    <S1BaseLayout>
+      <></>
+    </S1BaseLayout>
+  );
 };
 
 export default Page;
