@@ -24,9 +24,12 @@ const Page: React.FC = () => {
               );
             })}
           </div>
-          <p className="text-muted-foreground text-center m-1">
-            baymax fan art by sadiya
-          </p>
+          <div className="flex justify-center items-baseline">
+            <p className="text-muted-foreground text-center m-1">
+              baymax fan art by
+            </p>
+            <h3>sadiya</h3>
+          </div>
         </div>
       </section>
     </S1BaseLayout>
