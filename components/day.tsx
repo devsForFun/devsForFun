@@ -31,24 +31,18 @@ export const Day: React.FC<DayProps> = ({ dayNum, title, content, i }) => {
       <Image
         src={stickers[i]}
         alt={`Sticker for day ${dayNum}`}
-        className={`w-64 transform ${
+        className={`w-[10rem] md:w-64 transform ${
           isEven ? "-rotate-[10deg]" : "rotate-[10deg]"
         }`}
         width={256}
         height={256}
       />
-      <div
-        className={`flex flex-col items-center ${
-          isEven ? "md:items-end" : "md:items-start"
-        }`}
-      >
+      <div className={isEven ? "text-right" : "text-left"}>
         <div className="text-3xl mt-2 mb-4 font-extrabold">day {dayNum}</div>
-        <span className="text-muted-foreground">{title}</span>
+        <p className="text-muted-foreground font-bold">{title}</p>
         {content.map((line, index) => (
           <span key={index}>
-            <span className="text-sm md:text-base text-muted-foreground">
-              {line}
-            </span>
+            <span className="text-xs text-muted-foreground">{line}</span>
             <br />
           </span>
         ))}
