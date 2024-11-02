@@ -55,9 +55,9 @@ const Page: React.FC = () => {
         {finishers.map((person) => (
           <S1FinisherCard
             key={person.username}
-            id={person.id}
             name={person.name}
             vibe={person.vibe}
+            username={person.username}
           />
         ))}
       </div>
