@@ -4,13 +4,13 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
 const S1FinisherCard = ({
-  id,
   name,
   vibe,
+  username,
 }: {
-  id: number;
   name: string;
   vibe: string;
+  username: string;
 }) => {
   return (
     <Card className={`hover:border-${vibe}-faded w-[300px] flex items-center`}>
@@ -27,7 +27,7 @@ const S1FinisherCard = ({
         <span className="text-xl overflow-hidden whitespace-nowrap text-ellipsis block mb-2 max-w-[150px]">
           {name}
         </span>
-        <Link href={`/api/finisher/${id}`}>
+        <Link href={`/s1/hall-of-fame/${username}`}>
           <Badge className={`rounded-full hover:bg-${vibe}`}>
             View Profile
           </Badge>
