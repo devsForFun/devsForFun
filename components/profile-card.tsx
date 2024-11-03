@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import { cn } from "@/lib/utils";
-import clsx from "clsx";
+
 interface ProfileProps {
   userdetails: {
     club: string;
@@ -28,12 +27,13 @@ interface ProfileProps {
   };
 }
 
-const vibeImageUrls = {
-  scarletnova: "/images/scarletnova.png",
-  emraldspark: "/images/emraldspark.png",
-  goldlight: "/images/goldlight.png",
-  moonwind: "/images/moonwind.png",
-};
+const vibeImageUrls: { [key in ProfileProps["userdetails"]["vibe"]]: string } =
+  {
+    scarletnova: "/images/scarletnova.png",
+    emraldspark: "/images/emraldspark.png",
+    goldlight: "/images/goldlight.png",
+    moonwind: "/images/moonwind.png",
+  };
 
 const projects = [
   "green screen image editor",
@@ -44,7 +44,8 @@ const projects = [
   "counter app",
 ];
 
-const textColorVariants = {
+const textColorVariants:
+  | { [key in ProfileProps["userdetails"]["vibe"]]: string } = {
   scarletnova: "text-scarletnova",
   moonwind: "text-moonwind",
   emraldspark: "text-emraldspark",
