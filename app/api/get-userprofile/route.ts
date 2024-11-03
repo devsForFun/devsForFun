@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function GET(request: Request) {
   // Extract the ID from the query parameters
   const { searchParams } = new URL(request.url);
-  const userName = searchParams.get("username"); // Assuming you want to get by 'id'
+  const userName = searchParams.get("username");
   if (!userName) {
     return NextResponse.json({
       success: false,
@@ -12,12 +12,12 @@ export async function GET(request: Request) {
     });
   }
 
-  // Fetch data for the specific person from the "s1-finishers" table
+  // Fetch data for the specific person
   const { data, error } = await supabase
     .from("s1-finishers")
     .select("*")
-    .eq("username", userName) // Assuming 'id' is the column used to identify the person
-    .single(); // Use .single() to get a single record
+    .eq("username", userName)
+    .single();
 
   if (error) {
     console.error("Error fetching finisher:", error);
