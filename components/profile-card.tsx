@@ -29,10 +29,10 @@ interface ProfileProps {
 
 const vibeImageUrls: { [key in ProfileProps["userdetails"]["vibe"]]: string } =
   {
-    scarletnova: "/images/scarletnova.png",
-    emraldspark: "/images/emraldspark.png",
-    goldlight: "/images/goldlight.png",
-    moonwind: "/images/moonwind.png",
+    scarletnova: "/scarletnova.png",
+    emraldspark: "/emraldspark.png",
+    goldlight: "/goldlight.png",
+    moonwind: "/moonwind.png",
   };
 
 const projects = [
