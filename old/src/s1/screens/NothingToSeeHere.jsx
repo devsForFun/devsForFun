@@ -18,7 +18,10 @@ export const NothingToSeeHere = () => {
         href="https://gdsc.community.dev/raghu-engineering-college-visakhapatnam/"
       >
         <span>Explore GDSC REC</span>
-        <img src={glogo} alt="google developer student clubs raghu engineering college logo" />
+        <img
+          src={glogo}
+          alt="google developer student clubs raghu engineering college logo"
+        />
       </a>
       <p>We will update this soon, check back later!</p>
     </figure>

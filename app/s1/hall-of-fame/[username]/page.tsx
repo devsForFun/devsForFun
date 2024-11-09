@@ -35,7 +35,7 @@ export default function Page({ params }: { params: { username: string } }) {
     const fetchUserDetails = async () => {
       try {
         const response = await fetch(
-          `/api/get-userprofile?username=${params.username}`
+          `/api/get-userprofile?username=${params.username}`,
         );
         const data = await response.json();
         console.log("data:", data);

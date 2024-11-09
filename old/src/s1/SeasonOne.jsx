@@ -16,7 +16,8 @@ export const SeasonOne = () => {
 
   return (
     <Routes>
-      <Route path="/" Component={Home} /> {/*Replace this with s2 home after creating s2*/}
+      <Route path="/" Component={Home} />{" "}
+      {/*Replace this with s2 home after creating s2*/}
       <Route path="/s1" Component={Home} />
       <Route path="/s1/about" Component={About} />
       <Route path="/s1/curriculum" Component={Curriculum} />

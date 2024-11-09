@@ -9,8 +9,9 @@ export const CantFollowLive = () => {
           no problem!
         </h2>
         <p>
-          you can register until 3 days from the start date and still submit your updates, get your
-          doubts answered over email, and submit the final project
+          you can register until 3 days from the start date and still submit
+          your updates, get your doubts answered over email, and submit the
+          final project
         </p>
       </div>
     </section>

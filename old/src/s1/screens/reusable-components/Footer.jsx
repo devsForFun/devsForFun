@@ -14,10 +14,21 @@ export const Footer = () => {
       </p>
       <p>
         by
-        <a href="https://gdsc.community.dev/raghu-engineering-college-visakhapatnam/"> gdscrec</a>,
-        <a href="https://gdsc.community.dev/university-of-indonesia/"> gdsc.ui</a>,
-        <a href="https://gdsc.community.dev/kristu-jayanti-college-bengaluru/"> gdsc.kjc</a>,
-        <a href="https://gdsc.community.dev/university-of-hull/"> gdsc_hull</a>
+        <a href="https://gdsc.community.dev/raghu-engineering-college-visakhapatnam/">
+          {" "}
+          gdscrec
+        </a>
+        ,
+        <a href="https://gdsc.community.dev/university-of-indonesia/">
+          {" "}
+          gdsc.ui
+        </a>
+        ,
+        <a href="https://gdsc.community.dev/kristu-jayanti-college-bengaluru/">
+          {" "}
+          gdsc.kjc
+        </a>
+        ,<a href="https://gdsc.community.dev/university-of-hull/"> gdsc_hull</a>
       </p>
       <p>
         website design inspired by{" "}
@@ -25,7 +36,10 @@ export const Footer = () => {
           buildspace
         </a>
       </p>
-      <p>this program is not endorsed by Google, GDSC program, or buildspace in any way</p>
+      <p>
+        this program is not endorsed by Google, GDSC program, or buildspace in
+        any way
+      </p>
     </footer>
   );
 };

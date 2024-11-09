@@ -78,18 +78,25 @@ export const ProfilePage = ({ person }) => {
       </div>
       <div id="s1-projects">
         <p>
-          here's <span style={{ color: color }}>{person.name}'s</span> work in devsForFun(🚀) s1
+          here's <span style={{ color: color }}>{person.name}'s</span> work in
+          devsForFun(🚀) s1
         </p>
         <div>
           {projects.map((project, index) => {
             return (
               <p>
                 {project[0]}:{" "}
-                <a href={person[project[1] + "site" + numAdder(index)]} style={{ color: color }}>
+                <a
+                  href={person[project[1] + "site" + numAdder(index)]}
+                  style={{ color: color }}
+                >
                   live&nbsp;site
                 </a>
                 &nbsp;&nbsp;&nbsp;
-                <a href={person[project[1] + "repo" + numAdder(index)]} style={{ color: color }}>
+                <a
+                  href={person[project[1] + "repo" + numAdder(index)]}
+                  style={{ color: color }}
+                >
                   repo
                 </a>
               </p>
@@ -97,8 +104,9 @@ export const ProfilePage = ({ person }) => {
           })}
         </div>
         <p style={{ color: "white" }}>
-          only <span style={{ color: color }}>0.025%</span> finished this program and{" "}
-          <span style={{ color: color }}>{person.name}</span> is one of them!
+          only <span style={{ color: color }}>0.025%</span> finished this
+          program and <span style={{ color: color }}>{person.name}</span> is one
+          of them!
         </p>
       </div>
       <Footer />
