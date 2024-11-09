@@ -44,8 +44,9 @@ const projects = [
   "counter app",
 ];
 
-const textColorVariants:
-  | { [key in ProfileProps["userdetails"]["vibe"]]: string } = {
+const textColorVariants: {
+  [key in ProfileProps["userdetails"]["vibe"]]: string;
+} = {
   scarletnova: "text-scarletnova",
   moonwind: "text-moonwind",
   emraldspark: "text-emraldspark",

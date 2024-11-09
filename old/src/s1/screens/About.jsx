@@ -14,12 +14,12 @@ export const About = () => {
       <section id="about">
         <h2>about us</h2>
         <p>
-          devsForFun is a program created by four incredible clans of computer wizards (or developer
-          student clubs, as they call themselves).
+          devsForFun is a program created by four incredible clans of computer
+          wizards (or developer student clubs, as they call themselves).
         </p>
         <p>
-          this incredibly tough, yet rewarding path has been designed to set you on a path to become
-          a computer warrior (developer) of the future.
+          this incredibly tough, yet rewarding path has been designed to set you
+          on a path to become a computer warrior (developer) of the future.
         </p>
         <Link to="/" className="gdsc-btn">
           i want to try

@@ -20,8 +20,8 @@ export const HowDoesItWork = () => {
           </span>
         </div>
         <p>
-          7 classes, each followed by a day for practice. you'll build a cool little project at the
-          end. <br /> <br />
+          7 classes, each followed by a day for practice. you'll build a cool
+          little project at the end. <br /> <br />
           week 1: intro to programming <br />
           week 2: use what you've learned <br />
           week 3: do it yourself <br />

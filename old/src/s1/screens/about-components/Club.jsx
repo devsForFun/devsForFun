@@ -1,7 +1,13 @@
 import "./Club.css";
 import glogov from "../../assets/stickers/Google_for_Developers_logomark_color.png";
 
-export const Club = ({ university, twitter, linkedin, instagram, community }) => {
+export const Club = ({
+  university,
+  twitter,
+  linkedin,
+  instagram,
+  community,
+}) => {
   return (
     <div className="club">
       <div className="club-name">
