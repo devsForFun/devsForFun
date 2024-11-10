@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import S1BaseLayout from "../s1-base-layout";
 import DottedSeparator from "@/components/dotted-separator";
 import S1FinisherCard from "@/components/s1-finisher-card";
-import Loading from "@/components/ui/loading";
+import LoadingSpinner from "@/components/ui/loading-spinner";
 
 export type Finisher = {
   id: number;
@@ -57,7 +57,7 @@ const Page: React.FC = () => {
       </div>
 
       {loading ? (
-        <Loading size="55vh" />
+        <LoadingSpinner size="55vh" />
       ) : (
         <div className="grid justify-center grid-cols-1 justify-items-center md:grid-cols-2 gap-8 md:gap-10 md:max-w-[640px] mx-auto mb-8">
           {finishers.map((person) => (

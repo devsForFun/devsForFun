@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import S1BaseLayout from "../../s1-base-layout";
 import DottedSeparator from "@/components/dotted-separator";
 import { ProfileCard } from "@/components/profile-card";
-import Loading from "@/components/ui/loading";
+import LoadingSpinner from "@/components/ui/loading-spinner";
 
 export type UserDetails = {
   id: number;
@@ -54,7 +54,7 @@ export default function Page({ params }: { params: { username: string } }) {
   return (
     <S1BaseLayout>
       {loading ? (
-        <Loading size="70vh" />
+        <LoadingSpinner size="70vh" />
       ) : (
         <ProfileCard
           userdetails={

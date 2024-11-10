@@ -9,7 +9,7 @@ interface LoadingProps {
   size?: string;
 }
 
-const Loading: React.FC<LoadingProps> = ({ size }) => {
+const LoadingSpinner: React.FC<LoadingProps> = ({ size }) => {
   return (
     <div
       className="flex flex-col items-center justify-center"
@@ -31,4 +31,4 @@ const Loading: React.FC<LoadingProps> = ({ size }) => {
   );
 };
 
-export default Loading;
+export default LoadingSpinner;
