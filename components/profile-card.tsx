@@ -55,7 +55,7 @@ const textColorVariants: {
 
 export const ProfileCard: React.FC<ProfileProps> = ({ userdetails }) => {
   return (
-    <section className="flex flex-col gap-2 items-center justify-center m-4">
+    <section className="flex flex-col gap-2 items-center justify-center m-4 py-6">
       <section className="flex flex-col sm:flex-row items-center justify-center">
         <Image
           src={vibeImageUrls[userdetails.vibe]}
