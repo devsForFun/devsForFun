@@ -1,7 +1,39 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import LeadsInfo from "./about-component";
+import EmeralSpark from "../../../public/emraldspark.png";
+import LoadingSpinner from "@/components/ui/loading-spinner";
+
+export type Leads = {
+  id: number;
+  name: string;
+  linkedInURL: string;
+  websiteURL: string;
+};
 
 const Page: React.FC = () => {
+  const [leads, setLeads] = useState<Leads[] | []>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchLeads = async () => {
+      try {
+        // Unexpected error here
+        const response = await fetch("/api/get-leads-info");
+        const data = await response.json();
+        console.log("data: ", data);
+        setLeads(data);
+      } catch (error) {
+        console.log("Error fetching leads info: ", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchLeads();
+  }, []);
+
   return (
     <>
       <div className="flex text-6xl font-bold flex-col items-center justify-center mx-auto my-6 p-2 border-dashed border-gray-600 border-[0.01rem] w-1/2 max-lg:text-5xl max-lg:w-3/6 max-sm:w-3/4 max-sm:text-3xl">
@@ -33,6 +65,23 @@ const Page: React.FC = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="flex flex-col justify-center">
+        {loading ? (
+          <LoadingSpinner size="55vh" />
+        ) : (
+          <div className="flex flex-row gap-1 items-center justify-center">
+            {leads.map((lead) => (
+              <LeadsInfo
+                key={lead.id}
+                name={lead.name}
+                linkedInURL={lead.linkedInURL}
+                websiteURL={lead.websiteURL}
+                imageURL={EmeralSpark}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </>
   );
