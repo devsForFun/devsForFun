@@ -2,7 +2,6 @@ import "./About.css";
 import { Link } from "react-router-dom";
 import { NavBar } from "./reusable-components/NavBar";
 import { Footer } from "./reusable-components/Footer";
-import "./About.css";
 import { Club } from "./about-components/Club";
 import clubs from "./about-components/clubs.json";
 
@@ -39,9 +38,10 @@ export const About = () => {
 
         <div>
           wanna be part of more such events? join us here:
-          {list.map((club) => {
+          {list.map((club, index) => {
             return (
               <Club
+                key={index}
                 university={club.university}
                 twitter={club.twitter}
                 linkedin={club.linkedin}
