@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -25,20 +26,17 @@ const LeadsInfo: React.FC<LeadsInfoProps> = ({
         width={150}
         height={150}
       />
-      <Link
-        href={linkedInURL}
-        target="_blank"
-        className="hover:text-blue-400 hover:border-blue-400 hover:transition hover:ease-in hover:delay-100 mt-1"
-      >
-        LinkedIn profile
-      </Link>
-      <Link
-        href={websiteURL}
-        target="_blank"
-        className="hover:text-blue-400 hover:border-blue-400 hover:transition hover:ease-in hover:delay-100"
-      >
-        visit here
-      </Link>
+      <h3 className="text-md font-bold">{name}</h3>
+      <Button variant="outline" className="rounded-full" asChild>
+        <Link href={linkedInURL} target="_blank">
+          LinkedIn profile
+        </Link>
+      </Button>
+      <Button variant="outline" className="rounded-full" asChild>
+        <Link href={websiteURL} target="_blank">
+          visit here
+        </Link>
+      </Button>
     </div>
   );
 };
