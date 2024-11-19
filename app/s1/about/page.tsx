@@ -22,7 +22,6 @@ const Page: React.FC = () => {
   useEffect(() => {
     const fetchLeads = async () => {
       try {
-        // Unexpected error here
         const response = await fetch("/api/get-leads-info");
         const data = await response.json();
         console.log("data: ", data);
@@ -80,8 +79,8 @@ const Page: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-center ">
-              <div className="flex flex-row gap-1 items-center justify-center">
+            <div className="grid justify-center">
+              <div className="grid grid-cols-2 gap-6 items-center justify-center">
                 {leads.map((lead) => (
                   <LeadsInfo
                     key={lead.id}
