@@ -38,7 +38,6 @@ const Page: React.FC = () => {
       try {
         const response = await fetch("/api/get-finishers");
         const data = await response.json();
-        console.log("data:", data);
         setFinishers(data);
       } catch (error) {
         console.error("Error fetching finishers:", error);
