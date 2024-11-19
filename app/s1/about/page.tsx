@@ -5,6 +5,7 @@ import LeadsInfo from "./about-component";
 import EmeralSpark from "../../../public/emraldspark.png";
 import LoadingSpinner from "@/components/ui/loading-spinner";
 import { Button } from "@/components/ui/button";
+import S1BaseLayout from "../s1-base-layout";
 
 export type Leads = {
   id: number;
@@ -36,7 +37,7 @@ const Page: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <S1BaseLayout>
       <div className="flex text-6xl font-bold flex-col items-center justify-center mx-auto my-6 p-2 border-dashed border-gray-600 border-[0.01rem] w-1/2 max-lg:text-5xl max-lg:w-3/6 max-sm:w-3/4 max-sm:text-3xl">
         <h2 className="p-4"> about us</h2>
         <div className="text-gray-400 text-lg font-normal text-center my-4 max-lg:text-lg max-sm:text-sm">
@@ -84,7 +85,7 @@ const Page: React.FC = () => {
           </div>
         )}
       </div>
-    </>
+    </S1BaseLayout>
   );
 };
 
