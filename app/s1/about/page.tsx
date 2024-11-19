@@ -50,15 +50,14 @@ const Page: React.FC = () => {
             you on a path to become a computer warrior (developer) of the
             future.
           </p>
-          <Button variant="outline" disabled className="rounded-full mt-2">
-            <Link href="/s1" target="_blank">
-              visit s1
-            </Link>
+          <Button variant="outline" className="rounded-full mt-2">
+            <Link href="/s1">visit s1</Link>
           </Button>
           <div className="mt-3">
             <p>follow us on socials: </p>
             <p>
               <a href="https://x.com/devsForFun">
+                {/* no idea what to do here?! */}
                 <i className="hover:transition hover:ease-in hover:delay-100 hover:text-white"></i>
               </a>
               <a href="https://www.linkedin.com/company/devsforfun/">
