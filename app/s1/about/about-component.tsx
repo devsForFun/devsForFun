@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 
+// gonna change the imageURL props soon
 interface LeadsInfoProps {
   name: string;
   imageURL: StaticImageData;
