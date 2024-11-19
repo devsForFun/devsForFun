@@ -4,6 +4,7 @@ import Link from "next/link";
 import LeadsInfo from "./about-component";
 import EmeralSpark from "../../../public/emraldspark.png";
 import LoadingSpinner from "@/components/ui/loading-spinner";
+import { Button } from "@/components/ui/button";
 
 export type Leads = {
   id: number;
@@ -48,11 +49,11 @@ const Page: React.FC = () => {
             you on a path to become a computer warrior (developer) of the
             future.
           </p>
-          <button className="hover:text-blue-400 hover:border-blue-400 hover:transition hover:ease-in hover:delay-100 px-2 border-[0.01rem] rounded-full border-white mt-4 text-white">
+          <Button variant="outline" disabled className="rounded-full mt-2">
             <Link href="/s1" target="_blank">
               visit s1
             </Link>
-          </button>
+          </Button>
           <div className="mt-3">
             <p>follow us on socials: </p>
             <p>
