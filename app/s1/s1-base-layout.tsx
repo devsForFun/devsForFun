@@ -8,7 +8,7 @@ const S1BaseLayout = ({ children }: { children: React.ReactNode }) => {
         <Link href="/s1">
           <h1 className="font-semibold text-3xl">devsForFun</h1>
         </Link>
-        <Button variant="outline" disabled className="rounded-full">
+        <Button variant="outline" className="rounded-full">
           <Link href="/s1/about">about</Link>
         </Button>
       </header>
