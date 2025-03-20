@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import LeadsInfo from "./about-component";
 import EmeralSpark from "../../../public/emraldspark.png";
+import Goldlight from "../../../public/goldlight.png";
+import Moonwind from "../../../public/moonwind.png";
+import ScarletNova from "../../../public/scarletnova.png";
 import LoadingSpinner from "@/components/ui/loading-spinner";
 import { Button } from "@/components/ui/button";
 import S1BaseLayout from "../s1-base-layout";
@@ -13,6 +16,7 @@ export type Leads = {
   name: string;
   linkedInURL: string;
   websiteURL: string;
+  vibe: string;
 };
 
 const Page: React.FC = () => {
@@ -38,7 +42,7 @@ const Page: React.FC = () => {
 
   return (
     <S1BaseLayout>
-      <div className="h-[70vh] border-b border-dashed">
+      <div className="min-h-[70vh] border-b border-dashed pb-8">
         {loading ? (
           <LoadingSpinner />
         ) : (
@@ -79,18 +83,24 @@ const Page: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="grid justify-center">
-              <div className="grid grid-cols-2 gap-6 items-center justify-center">
-                {leads.map((lead) => (
-                  <LeadsInfo
-                    key={lead.id}
-                    name={lead.name}
-                    linkedInURL={lead.linkedInURL}
-                    websiteURL={lead.websiteURL}
-                    imageURL={EmeralSpark}
-                  />
-                ))}
-              </div>
+            <div className="flex w-full justify-center gap-4 flex-wrap">
+              {leads.map((lead) => (
+                <LeadsInfo
+                  key={lead.id}
+                  name={lead.name}
+                  linkedInURL={lead.linkedInURL}
+                  websiteURL={lead.websiteURL}
+                  imageURL={
+                    lead.vibe === "emeraldspark"
+                      ? EmeralSpark
+                      : lead.vibe === "goldlight"
+                        ? Goldlight
+                        : lead.vibe === "moonwind"
+                          ? Moonwind
+                          : ScarletNova
+                  }
+                />
+              ))}
             </div>
           </>
         )}
